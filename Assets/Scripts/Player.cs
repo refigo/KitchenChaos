@@ -127,7 +127,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
         isWalking = moveDir != Vector3.zero;
 
         float rotateSpeed = 30f;
-        transform.forward = Vector3.Slerp(transform.forward, moveDir, Time.deltaTime * rotateSpeed);
+        transform.forward = Vector3.Slerp(transform.forward, moveDir, Time.deltaTime * rotateSpeed); // TODO: Fix the error that is "Look rotation viewing vector is zero".
     }
 
     private void SetSelectedCounter(BaseCounter selectedCounter) {
