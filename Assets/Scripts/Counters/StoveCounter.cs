@@ -138,8 +138,6 @@ public class StoveCounter : BaseCounter, IHasProgress {
                             progressNormalized = 0f
                         });
                     }
-                } else {
-                    // Player is not carrying Plate but something else
                 }
             } else {
                 // Player is not carrying anything
